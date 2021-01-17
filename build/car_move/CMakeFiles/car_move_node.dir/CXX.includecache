@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qiangqiang/smart_car_ws/src/car_move/include/SmartCar.hpp
+wiringPi.h
+-
+
+/home/qiangqiang/smart_car_ws/src/car_move/src/SmartCar.cpp
+SmartCar.hpp
+-
+iostream
+-
+

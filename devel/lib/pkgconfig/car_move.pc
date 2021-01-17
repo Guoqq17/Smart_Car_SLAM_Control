@@ -1,0 +1,8 @@
+prefix=/home/qiangqiang/smart_car_ws/devel
+
+Name: car_move
+Description: Description of car_move
+Version: 0.0.0
+Cflags: -I/home/qiangqiang/smart_car_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+car_move
+-DCATKIN_DEVEL_PREFIX=/home/qiangqiang/smart_car_ws/devel -DCMAKE_INSTALL_PREFIX=/home/qiangqiang/smart_car_ws/install -G Unix Makefiles
