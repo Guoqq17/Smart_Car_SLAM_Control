@@ -1,5 +1,6 @@
 #include <SmartCar.hpp>
 #include <iostream>
+#include <ros/ros.h>
  
 using namespace std;
  
@@ -45,6 +46,8 @@ void SmartCar::go(const int &d ){
   if(d == state){
     return;
   }
+  //ROS_INFO("d: [%d]", d);
+  //ROS_INFO("state: [%d]", state);
   digitalWrite (ENA, HIGH);
   digitalWrite (ENB, HIGH);
   switch(d){

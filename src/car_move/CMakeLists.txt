@@ -223,6 +223,10 @@ target_link_libraries(car_move_node ${WIRINGPI_LIBRARIES})
 target_link_libraries(car_move_node ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(car_move_node ${wiringPi_LIB} -lcrypt -lrt)
 
+add_executable(car_teleop_key src/teleop_car_key.cpp)
+target_link_libraries(car_teleop_key ${catkin_LIBRARIES})
+# add_dependencies(car_teleop_key turtlesim_gencpp)
+
 catkin_install_python(PROGRAMS scripts/smartcar_teleop_key.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
